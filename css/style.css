@@ -21,7 +21,7 @@ body {
 }
 
 .header {
-  background: #222;
+  background: #222222;
   padding: 18px 0;
 }
 .header .header__wrapper {
@@ -67,6 +67,44 @@ body {
 }
 .header__cart:hover {
   fill: #F16D7F;
+}
+
+.basket {
+  position: absolute;
+  z-index: 3;
+  right: 150px;
+  top: 65px;
+  background: white;
+  padding: 10px;
+  border: 1px solid #ebebeb;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.basket {
+  font-size: 16px;
+}
+
+.basket {
+  width: 500px;
+}
+
+.basketRow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ebebeb;
+  padding-bottom: 10px;
+}
+
+.basketHeader {
+  font-weight: bold;
+}
+
+.basketTotal {
+  font-weight: bold;
+  text-align: right;
 }
 
 .subheader {
