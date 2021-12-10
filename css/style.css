@@ -105,6 +105,25 @@ body {
   font-size: 14px;
   box-shadow: inset 0 1px 20px 0 rgba(50, 50, 50, 0.5);
 }
+.header .basket__cart {
+  width: 150px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #F16D7F;
+  border: 2px solid #F16D7F;
+  text-decoration: none;
+  margin: 30px auto 10px;
+  transition: 0.2s;
+}
+.header .basket__cart:hover {
+  background: #F26376;
+  color: #fff;
+}
 .header .basket {
   font-size: 14px;
 }
@@ -268,17 +287,20 @@ body {
 }
 .filter__wrap .filter__list {
   display: flex;
-  list-style: none;
   align-items: center;
   flex-direction: row;
   margin-left: 30px;
   color: #6F6E6E;
-}
-.filter__wrap .filter__list ul {
   margin-right: 28px;
 }
-.filter__wrap .filter__list ul i {
+.filter__wrap .filter__list i {
   margin-left: 10px;
+}
+.filter__wrap .filter__list .filter__size-title::-webkit-details-marker {
+  display: none;
+}
+.filter__wrap .filter__list .filter__item {
+  margin-right: 28px;
 }
 
 .promo {
