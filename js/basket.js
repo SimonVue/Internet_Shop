@@ -5,13 +5,15 @@ const basketTotalValueEl = document.querySelector('.basketTotalValue');
 const basketTotalEl = document.querySelector('.basketTotal');
 const basketEl = document.querySelector('.basket');
 
-document.querySelector('.header__cart').addEventListener('click', () => {
+document.querySelector('.header__cart').addEventListener(
+  'click', () => {
   basketEl.classList.toggle('hidden');
 });
 
-const basket = {}
+const basket = {};
 
-document.querySelector('.products__card').addEventListener('click', event => {
+document.querySelector('.products__card').addEventListener(
+  'click', event => {
   if (!event.target.closest('.products__button')) {
     return;
   }
@@ -58,7 +60,8 @@ function renderProductInBasket(id) {
     return;
   }
   basketRowEl.querySelector('.productCount').textContent = basket[id].count;
-  basketRowEl.querySelector('.productTotalRow').textContent = basket[id].count * basket[id].price;
+  basketRowEl.querySelector('.productTotalRow').textContent =
+    basket[id].count * basket[id].price;
 }
 
 function renderNewProductInBasket(productId) {
@@ -70,7 +73,8 @@ function renderNewProductInBasket(productId) {
 				</div>
 				<div>$${basket[productId].price}</div>
 				<div>
-					$<span class="productTotalRow">${basket[productId].price * basket[productId].count}</span>
+					$<span class="productTotalRow">${basket[productId]
+    .price * basket[productId].count}</span>
 				</div>
 			</div>
 		`;
