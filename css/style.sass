@@ -296,7 +296,6 @@ body
 
 	.filter__list
 		display: flex
-
 		align-items: center
 		flex-direction: row
 		margin-left: 30px
@@ -306,12 +305,32 @@ body
 		i
 			margin-left: 10px
 
-		.filter__size-title
-			&::-webkit-details-marker
-				display: none
-
 		.filter__item
 			margin-right: 28px
+
+		.filter__size
+			position: relative
+
+		.filter__size-drop
+			position: absolute
+			top: 35px
+			left: 7px
+			width: 79px
+			height: 103px
+			padding: 7px 9px 11px
+			background: #fff
+			color: #6F6E6E
+			box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+			z-index: 1001
+
+		.filter__size-item
+			display: flex
+			align-items: center
+			margin-bottom: 6px
+
+			input
+				margin-right: 9px
+
 
 .promo
 	background: #F1E4E6

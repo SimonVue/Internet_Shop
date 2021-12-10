@@ -296,11 +296,31 @@ body {
 .filter__wrap .filter__list i {
   margin-left: 10px;
 }
-.filter__wrap .filter__list .filter__size-title::-webkit-details-marker {
-  display: none;
-}
 .filter__wrap .filter__list .filter__item {
   margin-right: 28px;
+}
+.filter__wrap .filter__list .filter__size {
+  position: relative;
+}
+.filter__wrap .filter__list .filter__size-drop {
+  position: absolute;
+  top: 35px;
+  left: 7px;
+  width: 79px;
+  height: 103px;
+  padding: 7px 9px 11px;
+  background: #fff;
+  color: #6F6E6E;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  z-index: 1001;
+}
+.filter__wrap .filter__list .filter__size-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+}
+.filter__wrap .filter__list .filter__size-item input {
+  margin-right: 9px;
 }
 
 .promo {
