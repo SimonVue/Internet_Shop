@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-** ul {
+* * ul {
   margin: 0;
   padding: 0;
 }
@@ -27,6 +27,10 @@ body {
 .header .header__wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+.header .header__right {
+  position: relative;
 }
 .header__logo {
   width: 44px;
@@ -61,49 +65,66 @@ body {
   fill: #F16D7F;
 }
 .header__cart {
+  position: relative;
   width: 41px;
   margin-left: 33px;
-  fill: #fff;
 }
-.header__cart:hover {
-  fill: #F16D7F;
+.header__cart i {
+  color: #fff;
+  font-size: 28px;
+  vertical-align: bottom;
 }
-
-.basket {
+.header__cart i:hover {
+  color: #F16D7F;
+}
+.header__cart span {
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  color: white;
+  background: #35a32e;
+  border-radius: 50%;
+  position: absolute;
+  text-align: center;
+  right: -8px;
+  top: -19px;
+  font-size: 12px;
+  line-height: 19px;
+}
+.header .hidden {
+  display: none;
+}
+.header .basket {
   position: absolute;
   z-index: 3;
-  right: 150px;
-  top: 65px;
-  background: white;
-  padding: 10px;
-  border: 1px solid #ebebeb;
+  right: 0;
+  top: 40px;
+  background: #ebe8e8;
+  padding: 20px;
   border-radius: 3px;
   font-size: 14px;
+  box-shadow: inset 0 1px 20px 0 rgba(50, 50, 50, 0.5);
 }
-
-.basket {
-  font-size: 16px;
+.header .basket {
+  font-size: 14px;
 }
-
-.basket {
+.header .basket {
   width: 500px;
 }
-
-.basketRow {
+.header .basketRow {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
   margin-bottom: 10px;
-  border-bottom: 1px solid #ebebeb;
+  border-bottom: 1px solid #cdcdcd;
   padding-bottom: 10px;
+  text-align: center;
 }
-
-.basketHeader {
-  font-weight: bold;
+.header .basketHeader {
+  font-weight: 400;
 }
-
-.basketTotal {
-  font-weight: bold;
+.header .basketTotal {
+  font-weight: 400;
   text-align: right;
 }
 
