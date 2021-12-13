@@ -18,6 +18,12 @@ body
 	max-width: 1140px
 	min-height: 100%
 	margin: 0 auto
+	@media(max-width: 1170px)
+		margin: 0 15px
+
+	@media(max-width: 767px)
+		max-width: 95%
+
 
 .header
 	background: #222222
@@ -27,6 +33,9 @@ body
 		display: flex
 		justify-content: space-between
 		align-items: center
+
+		@media(max-width: 1170px)
+			margin: 0 15px
 
 	.header__right
 		position: relative
@@ -63,10 +72,14 @@ body
 		&:hover
 			fill: $special-color
 
+		@media(max-width: 767px)
+			display: none
+
 	&__cart
 		position: relative
 		width: 41px
 		margin-left: 33px
+		margin-right: 10px
 
 		i
 			color: #fff
@@ -90,6 +103,9 @@ body
 			font-size: 12px
 			line-height: 19px
 
+		@media(max-width: 767px)
+			display: none
+
 
 	.hidden
 		display: none
@@ -102,10 +118,8 @@ body
 		top: 40px
 		background: #ebe8e8
 		padding: 20px
-		//border: 1px solid #ebebeb
 		border-radius: 3px
 		font-size: 14px
-		//box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
 		box-shadow: inset 0 1px 20px 0 rgba(50, 50, 50, 0.5)
 
 		&__cart
@@ -122,6 +136,7 @@ body
 			text-decoration: none
 			margin: 30px auto 10px
 			transition: .2s
+
 
 			&:hover
 				background: #F26376
@@ -338,15 +353,41 @@ body
 	background: #F1E4E6
 	margin-bottom: 65px
 
+	@media(max-width: 1023px)
+		margin-bottom: 20px
+
 	.promo__wrap
-		background: url(../img/promo_man.png) no-repeat -195px 0
+		background: url('../img/promo_man.png') no-repeat -195px 0
+		background-size: contain
 		height: 764px
 		display: flex
 		justify-content: flex-end
 		align-items: center
 
+		@media(max-width: 1120px)
+			height: 650px
+			background: url('../img/promo_man.png') no-repeat -195px 0
+
+		@media(max-width: 1023px)
+			max-width: 768px
+			height: 367px
+			background: url('../img/promo_man.png') no-repeat -20px 0
+			background-size: contain
+
+		@media(max-width: 767px)
+			justify-content: center
+			max-width: 90%
+			margin: 0 auto
+			background: none
+
+
+
+
 	&__text-block
 		margin: 290px 100px 380px 0
+		@media(max-width: 1023px)
+			align-items: center
+			margin: 0
 
 	&__text
 		font-family: Lato, sans-serif
@@ -358,9 +399,23 @@ body
 		padding: 0 0 0 16px
 		border-left: 12px solid $special-color
 
+		@media(max-width: 1023px)
+			font-size: 24px
+			line-height: 29px
+
+		@media(max-width: 767px)
+			font-size: 20px
+
 	&__brand
 		font-size: 48px
 		font-weight: 900
+		line-height: 53px
+
+		@media(max-width: 1023px)
+			font-size: 44px
+		@media(max-width: 767px)
+			font-size: 38px
+
 
 	&__red
 		color: $special-color
@@ -383,7 +438,6 @@ body
 		line-height: 17px
 
 
-
 		&-title
 			margin-bottom: 24px
 
@@ -393,6 +447,7 @@ body
 			line-height: 17px
 			margin-bottom: 20px
 			list-style: none
+
 			p
 				color: $special-color
 				margin-bottom: 12px
@@ -400,9 +455,12 @@ body
 			&-item
 				margin-bottom: 11px
 				margin-left: 20px
+
 				&:hover
-					list-style: circle
+					list-style: square
 					color: $special-color
+					width: 5px
+					height: 5px
 
 
 			&-link
@@ -416,7 +474,6 @@ body
 
 				&:hover
 					color: $special-color
-					//border-bottom: 2px solid $special-color
 
 
 		.promo__menu-close
@@ -426,6 +483,7 @@ body
 			width: 12px
 			height: 12px
 			cursor: pointer
+
 			&:hover
 				color: $special-color
 
@@ -435,8 +493,9 @@ body
 		justify-content: space-between
 		flex-wrap: wrap
 
-	// h2
-	// 	display: none
+		@media(max-width: 767px)
+			justify-content: center
+
 
 	&__card
 		display: flex
@@ -450,14 +509,26 @@ body
 			transform: scale(1.05)
 			box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
 
+		@media(max-width: 1120px)
+			width: 315px
+			height: 215px
+
+		@media(max-width: 980px)
+			width: 232px
+			height: 167px
+
+		@media(max-width: 767px)
+			width: 343px
+			height: 247px
+
 		.offer__item
 			text-align: center
 			margin: 0 auto
 			transition-duration: 1s
-			transition: 1.1s
+			transition: 0.3s
 
 			&:hover
-				transform: scale(1.3) rotateY(-360deg)
+				transform: scale(1.05)
 
 			.offer__suptitle
 				font-weight: 400
@@ -481,16 +552,16 @@ body
 		background: url('../img/img_offer_1.png') center
 
 	.offer__men
-		background: url(../img/img_offer_2.jpg) center
+		background: url('../img/img_offer_2.jpg') center
 
 	.offer__kids
-		background: url(../img/img_offer_3.jpg) center
+		background: url('../img/img_offer_3.jpg') center
 
 	.offer__lux
 		width: 100%
 		height: 180px
 		margin-bottom: 96px
-		background: url(../img/img_offer_4.jpg) center
+		background: url('../img/img_offer_4.jpg') center
 
 .review
 	.wrapper
@@ -864,7 +935,7 @@ body
 	&__card
 		display: flex
 		flex-wrap: wrap
-		justify-content: space-between
+		justify-content: space-around
 		margin-bottom: 48px
 
 	.card
@@ -1007,14 +1078,27 @@ body
 	padding: 104px 0
 	background: #222224
 
+	@media(max-width: 1023px)
+		padding: 48px 0 12px
+
+
 	&__list
 		display: flex
 		align-items: center
 		justify-content: space-between
 		list-style: none
 
+		@media(max-width: 1023px)
+			flex-direction: column
+
+
 		.list__item
 			margin: 0 auto
+
+			@media(max-width: 1023px)
+				width: 360px
+				margin-bottom: 48px
+
 
 		img
 			display: block
@@ -1035,7 +1119,8 @@ body
 			text-align: center
 
 .feedback
-	background: url('../img/bg_sub.png') center /cover no-repeat
+	background: url('../img/bg_sub.png') no-repeat
+	background-size: cover
 
 	&__list
 		display: flex
@@ -1043,8 +1128,12 @@ body
 		align-items: center
 		padding: 97px 0 126px
 		margin: 0 auto
-
 		list-style: none
+
+		@media(max-width: 1023px)
+			flex-direction: column
+			margin: 0 auto
+			padding: 64px 0 140px
 
 	&__left
 		width: 360px
@@ -1059,9 +1148,18 @@ body
 		text-align: center
 		color: #222224
 
+		@media(max-width: 1023px)
+			margin-bottom: 87px
+
 	&__right
-		position: relative
+
 		margin-right: 96px
+
+		@media(max-width: 1023px)
+			margin: 0 auto
+
+		@media(max-width: 424px)
+			width: 100%
 
 	&__subscribe
 		font-weight: 400
@@ -1071,11 +1169,15 @@ body
 		text-align: center
 		margin-bottom: 32px
 
+		@media(max-width: 424px)
+			font-size: 14px
+
 		span
 			font-weight: 700
 			font-size: 24px
 
 	&__email
+		position: relative
 		display: inline-block
 		width: 256px
 		height: 49px
@@ -1090,10 +1192,11 @@ body
 		&:hover
 			background: #e2e2c8
 
+		@media(max-width: 424px)
+			width: 245px
+
 	&__btn
 		position: absolute
-		top: 94px
-		right: -11px
 		width: 100px
 		height: 49px
 		border-top-right-radius: 50px
@@ -1107,6 +1210,7 @@ body
 			background: #d35b6b
 			cursor: pointer
 
+
 .footer
 	background: #222224
 
@@ -1115,6 +1219,10 @@ body
 		justify-content: space-between
 		padding: 24px 0
 		align-items: center
+
+		@media(max-width: 767px)
+			flex-direction: column-reverse
+
 
 	&__text
 		font-size: 16px
@@ -1138,3 +1246,6 @@ body
 			&:hover
 				background: $special-color
 				fill: #fff
+
+		@media(max-width: 767px)
+			margin: 43px 0 40px
