@@ -475,8 +475,6 @@ body {
 .promo .promo__menu .promo__submenu-item:hover {
   list-style: square;
   color: #F16D7F;
-  width: 5px;
-  height: 5px;
 }
 .promo .promo__menu .promo__submenu-link {
   font-size: 14px;
