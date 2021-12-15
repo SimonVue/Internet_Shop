@@ -459,7 +459,7 @@ body
 				&:hover
 					list-style: square
 					color: $special-color
-					
+
 
 
 			&-link
@@ -937,6 +937,10 @@ body
 		justify-content: space-around
 		margin-bottom: 48px
 
+		@media(max-width: 374px)
+			flex-direction: column
+
+
 	.card
 		position: relative
 		width: 360px
@@ -948,13 +952,35 @@ body
 		&:hover
 			transform: scale(1.05)
 
+			@media(max-width: 374px)
+				transform: none
+
 		&:hover .card__overlay
 			opacity: 1
+
+		&:hover
+			@media(max-width: 376px)
+				transform: none
+
+
+		@media(max-width: 374px)
+			max-width: 290px
+			max-height: 540px
+			margin: 0 auto 15px
+
+		video
+			@media(max-width: 374px)
+				max-width: 290px
+				max-height: 340px
+
 
 		&__img
 			width: 356px
 			display: block
 			margin: 0 auto 24px
+
+			@media(max-width: 374px)
+				max-width: 290px
 
 		&__title
 			font-weight: 400
@@ -975,6 +1001,9 @@ body
 			background: rgba(33, 22, 22, 0.7)
 			opacity: 0
 			transition: 0.3s
+
+			@media(max-width: 374px)
+				height: 340px
 
 		&__text
 			font-weight: 300
@@ -1095,7 +1124,7 @@ body
 			margin: 0 auto
 
 			@media(max-width: 1023px)
-				width: 360px
+				max-width: 360px
 				margin-bottom: 48px
 
 
@@ -1134,8 +1163,11 @@ body
 			margin: 0 auto
 			padding: 64px 0 140px
 
+		@media(max-width: 374px)
+			padding: 64px 0
+
 	&__left
-		width: 360px
+		max-width: 360px
 		text-align: center
 
 	&__img
@@ -1149,6 +1181,12 @@ body
 
 		@media(max-width: 1023px)
 			margin-bottom: 87px
+
+		@media(max-width: 374px)
+			max-width: 310px
+			font-size: 18px
+			margin: 0 auto 50px
+
 
 	&__right
 
@@ -1178,7 +1216,7 @@ body
 	&__email
 		position: relative
 		display: inline-block
-		width: 256px
+		width: 245px
 		height: 49px
 		border-top-left-radius: 50px
 		border-bottom-left-radius: 50px
@@ -1191,8 +1229,14 @@ body
 		&:hover
 			background: #e2e2c8
 
+		@media(max-width: 374px)
+			width: 190px
+
+	&__form
 		@media(max-width: 424px)
-			width: 245px
+			text-align: center
+			margin-left: -100px
+
 
 	&__btn
 		position: absolute
