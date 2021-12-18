@@ -26,8 +26,75 @@ body
 
 
 .header
+	position: relative
 	background: #222222
 	padding: 18px 0
+
+	.hidden
+		display: none
+
+	.header__menu
+		position: absolute
+		top: 78px
+		right: 0
+		width: 232px
+		height: 764px
+		background: #fff
+		box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+		padding: 37px 34px
+		text-transform: uppercase
+		font-weight: bold
+		font-size: 14px
+		line-height: 17px
+		z-index: 1001
+
+		&-title
+			margin-bottom: 24px
+
+	&__submenu
+		font-weight: bold
+		font-size: 14px
+		line-height: 17px
+		margin-bottom: 20px
+		list-style: none
+
+	p
+		color: $special-color
+		margin-bottom: 12px
+
+	.header__submenu-item
+		margin-bottom: 11px
+		margin-left: 20px
+
+		&:hover
+			list-style: square
+			color: $special-color
+
+
+
+	.header__submenu-link
+		font-size: 14px
+		line-height: 17px
+		font-weight: normal
+		text-transform: none
+		color: #6F6E6E
+		text-decoration: none
+		padding-left: 5px
+
+		&:hover
+			color: $special-color
+
+
+	.header__menu-close
+		position: absolute
+		top: 16px
+		right: 16px
+		width: 12px
+		height: 12px
+		cursor: pointer
+
+		&:hover
+			color: $special-color
 
 	.header__wrapper
 		display: flex
@@ -35,7 +102,8 @@ body
 		align-items: center
 
 		@media(max-width: 1170px)
-			margin: 0 15px
+			margin: 0 32px
+
 
 	.header__right
 		position: relative
@@ -53,7 +121,7 @@ body
 		&:hover
 			fill: $special-color
 
-	&__menu
+	&__burger
 		width: 32px
 		height: 32px
 		fill: #fff
@@ -188,9 +256,13 @@ body
 		line-height: 29px
 		font-weight: 400
 		color: $special-color
+		@media(max-width: 426px)
+			margin: 0 auto
 
 	.breadcrumb
 		display: flex
+		@media(max-width: 767px)
+			display: none
 
 		&:active
 			font-weight: 700
@@ -239,12 +311,25 @@ body
 	font-size: 14px
 	text-transform: uppercase
 
+	@media(max-width: 1026px)
+		justify-content: space-between
+
+	@media(max-width: 600px)
+		padding: 24px 0 40px
+
 	.filter__menu
 		position: relative
-		width: 360px
+		max-width: 360px
+		@media(max-width: 1023px)
+			//max-width: 360px
 
 		svg
 			margin-left: 11px
+
+			@media(max-width: 600px)
+				width: 37px
+				height: 25px
+				margin-left: 0
 
 	.filter__menu[open]
 		box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
@@ -259,9 +344,16 @@ body
 
 	.filter__title
 		display: block
-		width: 104px
+		max-width: 106px
 		cursor: pointer
 		padding: 13px 16px
+
+		@media(max-width: 730px)
+			padding: 15px 0
+
+		span
+			@media(max-width: 600px)
+				display: none
 
 		&__title::-webkit-details-marker
 			display: none
@@ -314,15 +406,36 @@ body
 		display: flex
 		align-items: center
 		flex-direction: row
-		margin-left: 30px
+		margin-left: 290px
 		color: #6F6E6E
 		margin-right: 28px
+
+		@media(max-width: 1023px)
+			font-size: 12px
+			margin: 0
 
 		i
 			margin-left: 10px
 
+			@media(max-width: 325px)
+				margin-left: 5px
+
 		.filter__item
 			margin-right: 28px
+
+			@media(max-width: 325px)
+				margin-right: 15px
+
+		.filter__item:last-child
+			@media(max-width: 1026px)
+			margin-right: 0
+			margin-left: 24px
+
+			@media(max-width: 325px)
+				margin-left: 15px
+
+
+
 
 		.filter__size
 			position: relative
@@ -420,71 +533,7 @@ body
 	&__red
 		color: $special-color
 
-	.hidden
-		display: none
 
-	.promo__menu
-		position: absolute
-		top: 0
-		right: 0
-		width: 232px
-		height: 764px
-		background: #fff
-		box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
-		padding: 37px 34px
-		text-transform: uppercase
-		font-weight: bold
-		font-size: 14px
-		line-height: 17px
-
-
-		&-title
-			margin-bottom: 24px
-
-		.promo__submenu
-			font-weight: bold
-			font-size: 14px
-			line-height: 17px
-			margin-bottom: 20px
-			list-style: none
-
-			p
-				color: $special-color
-				margin-bottom: 12px
-
-			&-item
-				margin-bottom: 11px
-				margin-left: 20px
-
-				&:hover
-					list-style: square
-					color: $special-color
-
-
-
-			&-link
-				font-size: 14px
-				line-height: 17px
-				font-weight: normal
-				text-transform: none
-				color: #6F6E6E
-				text-decoration: none
-				padding-left: 5px
-
-				&:hover
-					color: $special-color
-
-
-		.promo__menu-close
-			position: absolute
-			top: 16px
-			right: 16px
-			width: 12px
-			height: 12px
-			cursor: pointer
-
-			&:hover
-				color: $special-color
 
 .offer
 	.wrapper
@@ -829,6 +878,14 @@ body
 		justify-content: space-between
 		padding: 64px 0 96px
 
+		@media(max-width: 767px)
+			flex-direction: column
+
+	&__form
+		@media(max-width: 767px)
+			max-width: 100%
+			margin: 0 auto
+
 	&__form-text
 		font-weight: 300
 		font-size: 16px
@@ -837,7 +894,7 @@ body
 
 	&__input
 		display: block
-		width: 360px
+		width: 358px
 		height: 45px
 		font-weight: 300
 		font-size: 13px
@@ -846,6 +903,9 @@ body
 		border: 1px solid #A4A4A4
 		padding: 0 17px
 		margin-top: 20px
+		@media(max-width: 424px)
+			width: 100%
+
 
 		&:hover
 			box-shadow: 2px 2px 8px 3px rgba(34, 60, 80, 0.06)
@@ -871,6 +931,8 @@ body
 		line-height: 16px
 		color: #B1B1B1
 		margin: 15px 0 39px
+		@media(max-width: 426px)
+			width: 100%
 
 	&__btn
 		font-size: 14px
@@ -879,6 +941,9 @@ body
 		padding: 16px 29px
 		background: #F16D7F
 		border: none
+
+		@media(max-width: 767px)
+			margin-bottom: 40px
 
 		i
 			margin-left: 20px
@@ -889,12 +954,19 @@ body
 	&__info
 		margin-left: 128px
 
+		@media(max-width: 1023px)
+			margin-left: 22px
+
+
 	&__title
 		font-weight: 300
 		font-size: 24px
 		line-height: 29px
 		color: #000000
 		margin-bottom: 22px
+
+		@media(max-width: 1023px)
+			font-size: 16px
 
 	&__info-text
 		font-weight: 300
@@ -903,14 +975,18 @@ body
 		color: #000000
 		margin-bottom: 21px
 
+		@media(max-width: 1023px)
+			font-size: 16px
+
 	&__list-item
 		list-style: none
 		margin-bottom: 16px
 		font-weight: 300
 		font-size: 24px
 		line-height: 29px
-
 		color: #000000
+		@media(max-width: 1023px)
+			font-size: 16px
 
 		i
 			margin-right: 22px
