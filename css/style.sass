@@ -314,6 +314,9 @@ body
 	@media(max-width: 1026px)
 		justify-content: space-between
 
+	@media(max-width: 769px)
+		justify-content: space-between
+
 	@media(max-width: 600px)
 		padding: 24px 0 40px
 
@@ -323,7 +326,10 @@ body
 		margin-left: 10px
 		z-index: 1004
 
-		@media(max-width: 769px)
+		@media(max-width: 1026px)
+			margin-left: 70px
+
+		@media(max-width: 1023px)
 			margin-left: 5px
 
 		@media(max-width: 426px)
@@ -334,6 +340,9 @@ body
 
 		@media(max-width: 376px)
 			margin-left: -5px
+
+		@media(max-width: 374px)
+			margin-left: 0
 
 		svg
 			margin-left: 11px
@@ -356,7 +365,7 @@ body
 		z-index: 1002
 
 		@media(max-width: 374px)
-			width: 300px
+			width: 290px
 
 	.filter__menu[open]
 		@media(max-width: 700px)
@@ -366,9 +375,16 @@ body
 
 	.filter__title
 		display: block
-		width: 106px
+		width: 360px
 		cursor: pointer
 		padding: 13px 16px
+
+		@media(max-width: 1026px)
+			width: 106px
+
+
+		@media(max-width: 770px)
+			margin-left: 0
 
 		@media(max-width: 700px)
 			padding: 12px 0 12px 15px
@@ -378,7 +394,7 @@ body
 			max-width: 356px
 
 		@media(max-width: 374px)
-			max-width: 300px
+			max-width: 290px
 			position: relative
 			z-index: 1003
 
@@ -405,7 +421,7 @@ body
 		z-index: 1001
 
 		@media(max-width: 374px)
-			width: 300px
+			width: 290px
 
 		.filter__subtitle
 			font-weight: normal
@@ -450,22 +466,26 @@ body
 		position: relative
 		z-index: 1004
 
-		@media(max-width: 1023px)
+		@media(max-width: 1026px)
 			font-size: 12px
-			margin: 0
+			margin-right: 75px
+
+		@media(max-width: 850px)
+			margin-right: 10px
+
 
 		@media(max-width: 700px)
 			margin: 0 auto
 
 		@media(max-width: 426px)
-			margin: 0 auto
+			//margin: 0 auto
 			font-size: 10px
 			align-items: baseline
 
 		i
 			margin-left: 10px
 
-			@media(max-width: 374px)
+			@media(max-width: 424px)
 
 				display: none
 
@@ -478,21 +498,13 @@ body
 		.filter__item:last-child
 			margin-right: 0
 
-			//@media(max-width: 1026px)
-			//
-			//margin-left: 24px
-			//
-			//@media(max-width: 325px)
-			//	margin-left: 15px
-
-
 		.filter__size
 			position: relative
 
 		.filter__size-drop
 			position: absolute
 			top: 35px
-			left: 7px
+			left: -10px
 			width: 79px
 			height: 103px
 			padding: 7px 9px 11px

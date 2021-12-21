@@ -319,6 +319,11 @@ body {
     justify-content: space-between;
   }
 }
+@media (max-width: 769px) {
+  .filter__wrap {
+    justify-content: space-between;
+  }
+}
 @media (max-width: 600px) {
   .filter__wrap {
     padding: 24px 0 40px;
@@ -330,7 +335,12 @@ body {
   margin-left: 10px;
   z-index: 1004;
 }
-@media (max-width: 769px) {
+@media (max-width: 1026px) {
+  .filter__wrap .filter__menu {
+    margin-left: 70px;
+  }
+}
+@media (max-width: 1023px) {
   .filter__wrap .filter__menu {
     margin-left: 5px;
   }
@@ -348,6 +358,11 @@ body {
 @media (max-width: 376px) {
   .filter__wrap .filter__menu {
     margin-left: -5px;
+  }
+}
+@media (max-width: 374px) {
+  .filter__wrap .filter__menu {
+    margin-left: 0;
   }
 }
 .filter__wrap .filter__menu svg {
@@ -374,7 +389,7 @@ body {
 }
 @media (max-width: 374px) {
   .filter__wrap .filter__menu[open] .filter__title-menu {
-    width: 300px;
+    width: 290px;
   }
 }
 @media (max-width: 700px) {
@@ -385,9 +400,19 @@ body {
 }
 .filter__wrap .filter__title {
   display: block;
-  width: 106px;
+  width: 360px;
   cursor: pointer;
   padding: 13px 16px;
+}
+@media (max-width: 1026px) {
+  .filter__wrap .filter__title {
+    width: 106px;
+  }
+}
+@media (max-width: 770px) {
+  .filter__wrap .filter__title {
+    margin-left: 0;
+  }
 }
 @media (max-width: 700px) {
   .filter__wrap .filter__title {
@@ -402,7 +427,7 @@ body {
 }
 @media (max-width: 374px) {
   .filter__wrap .filter__title {
-    max-width: 300px;
+    max-width: 290px;
     position: relative;
     z-index: 1003;
   }
@@ -431,7 +456,7 @@ body {
 }
 @media (max-width: 374px) {
   .filter__wrap .filter__drop {
-    width: 300px;
+    width: 290px;
   }
 }
 .filter__wrap .filter__drop .filter__subtitle {
@@ -477,10 +502,15 @@ body {
   position: relative;
   z-index: 1004;
 }
-@media (max-width: 1023px) {
+@media (max-width: 1026px) {
   .filter__wrap .filter__list {
     font-size: 12px;
-    margin: 0;
+    margin-right: 75px;
+  }
+}
+@media (max-width: 850px) {
+  .filter__wrap .filter__list {
+    margin-right: 10px;
   }
 }
 @media (max-width: 700px) {
@@ -490,7 +520,6 @@ body {
 }
 @media (max-width: 426px) {
   .filter__wrap .filter__list {
-    margin: 0 auto;
     font-size: 10px;
     align-items: baseline;
   }
@@ -498,7 +527,7 @@ body {
 .filter__wrap .filter__list i {
   margin-left: 10px;
 }
-@media (max-width: 374px) {
+@media (max-width: 424px) {
   .filter__wrap .filter__list i {
     display: none;
   }
@@ -520,7 +549,7 @@ body {
 .filter__wrap .filter__list .filter__size-drop {
   position: absolute;
   top: 35px;
-  left: 7px;
+  left: -10px;
   width: 79px;
   height: 103px;
   padding: 7px 9px 11px;
