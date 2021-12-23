@@ -250,12 +250,16 @@ body
 		align-items: center
 		height: 148px
 
+		@media(max-width: 767px)
+			height: 100px
+
 	&__title
 		font-size: 24px
 		line-height: 29px
 		font-weight: 400
 		color: $special-color
-		@media(max-width: 426px)
+
+		@media(max-width: 767px)
 			margin: 0 auto
 
 	.breadcrumb
@@ -749,9 +753,26 @@ body
 .cart
 	padding: 96px 0 128px
 
+	@media(max-width: 980px)
+		padding: 59px 0 90px
+
+	@media(max-width: 374px)
+		padding: 50px 0
+
 	&__general
 		display: flex
 		justify-content: space-between
+
+
+		@media(max-width: 1060px)
+			justify-content: space-around
+
+		@media(max-width: 980px)
+			flex-direction: column
+			margin: 0 auto
+
+		@media(max-width: 374px)
+			width: 100%
 
 	&__item
 		position: relative
@@ -761,10 +782,32 @@ body
 		box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13)
 		margin-bottom: 40px
 
-	&__img
+		@media(max-width: 1060px)
+			width: 570px
 
+		@media(max-width: 980px)
+			width: 734px
+			margin: 0 auto 40px
+
+		@media(max-width: 767px)
+			width: 358px
+			height: 175px
+
+		@media(max-width: 374px)
+			width: 100%
+
+
+
+	&__img
 		width: 262px
 		margin-right: 31px
+
+		@media(max-width: 767px)
+			width: 143px
+			height: 175px
+
+		@media(max-width: 374px)
+			margin-right: 18px
 
 	&__info
 		padding-left: 0
@@ -779,6 +822,18 @@ body
 		margin-bottom: 42px
 		color: #222222
 
+		@media(max-width: 767px)
+			width: 140px
+			font-size: 16px
+			line-height: 19px
+			margin-top: 13px
+			margin-bottom: 20px
+
+		@media(max-width: 374px)
+			font-size: 12px
+			line-height: 17px
+			width: 100px
+
 	&__features
 		list-style: none
 		padding-left: 0
@@ -790,9 +845,11 @@ body
 			color: #575757
 			margin-bottom: 6px
 
+			@media(max-width: 767px)
+				font-size: 14px
+				line-height: 17px
+
 		span
-			font-size: 22px
-			line-height: 26px
 			color: #EF5B70
 
 		.number
@@ -805,6 +862,11 @@ body
 			margin-left: 24px
 			text-align: center
 
+			@media(max-width: 767px)
+				width: 24px
+				height: 15px
+
+
 	&__cross
 		position: absolute
 		top: 28px
@@ -814,11 +876,31 @@ body
 		text-align: center
 		color: #575757
 
+		@media(max-width: 767px)
+			top: 15px
+			right: 12px
+
 	&__button
 		display: flex
 		justify-content: space-between
 		width: 652px
 		padding-top: 32px
+
+		@media(max-width: 1060px)
+			width: 570px
+
+		@media(max-width: 980px)
+			width: 508px
+			padding-top: 22px
+			margin: 0 auto 64px
+
+		@media(max-width: 767px)
+			width: 359px
+			padding-top: 0
+			margin-bottom: 48px
+
+		@media(max-width: 374px)
+			width: 100%
 
 	&__btn
 		width: 235px
@@ -830,15 +912,39 @@ body
 		line-height: 17px
 		color: #000000
 
+		@media(max-width: 767px)
+			width: 175px
+			height: 33px
+			font-size: 12px
+			text-transform: capitalize
+
+		@media(max-width: 374px)
+			width: 140px
+
 		&:hover
 			background: $special-color
 			color: #fff
 			border: transparent
 
+	&__order
+		@media(max-width: 980px)
+			display: flex
+			justify-content: space-around
+
+		@media(max-width: 780px)
+			justify-content: space-between
+
+		@media(max-width: 767px)
+			flex-direction: column
+			margin: 0 auto
+
 	&__form-address
 		display: flex
 		flex-direction: column
 		width: 360px
+
+		@media(max-width: 374px)
+			width: 100%
 
 	.cart__form
 		display: flex
@@ -851,6 +957,9 @@ body
 		color: #222222
 		margin-top: 17px
 
+		@media(max-width: 980px)
+			margin-top: 0
+
 	.cart__input
 		width: 360px
 		height: 45px
@@ -861,6 +970,9 @@ body
 		color: #B1B1B1
 		padding: 0 17px
 		margin-top: 20px
+
+		@media(max-width: 374px)
+			width: 100%
 
 		&:hover
 			box-shadow: 2px 2px 8px 3px rgba(34, 60, 80, 0.06)
@@ -874,6 +986,9 @@ body
 		color: #4A4A4A
 		margin-bottom: 57px
 
+		@media(max-width: 767px)
+			margin-bottom: 48px
+
 		&:hover
 			background: $special-color
 			color: #fff
@@ -884,6 +999,15 @@ body
 		height: 214px
 		background: #F5F3F3
 		padding: 39px 43px 42px
+
+		@media(max-width: 980px)
+			margin-top: 39px
+
+		@media(max-width: 767px)
+			margin-top: 0
+
+		@media(max-width: 374px)
+			width: 100%
 
 	hr
 		background: #E2E2E2
