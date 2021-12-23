@@ -1045,6 +1045,7 @@ body {
 @media (max-width: 780px) {
   .cart__order {
     justify-content: space-between;
+    padding: 0 15px;
   }
 }
 @media (max-width: 767px) {
