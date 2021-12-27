@@ -46,7 +46,7 @@ body
 		font-weight: bold
 		font-size: 14px
 		line-height: 17px
-		z-index: 1001
+		z-index: 1005
 
 		&-title
 			margin-bottom: 24px
@@ -69,7 +69,6 @@ body
 		&:hover
 			list-style: square
 			color: $special-color
-
 
 
 	.header__submenu-link
@@ -251,12 +250,16 @@ body
 		align-items: center
 		height: 148px
 
+		@media(max-width: 767px)
+			height: 100px
+
 	&__title
 		font-size: 24px
 		line-height: 29px
 		font-weight: 400
 		color: $special-color
-		@media(max-width: 426px)
+
+		@media(max-width: 767px)
 			margin: 0 auto
 
 	.breadcrumb
@@ -307,11 +310,15 @@ body
 
 .filter__wrap
 	display: flex
+
 	padding: 51px 0 64px
 	font-size: 14px
 	text-transform: uppercase
 
 	@media(max-width: 1026px)
+		justify-content: space-between
+
+	@media(max-width: 769px)
 		justify-content: space-between
 
 	@media(max-width: 600px)
@@ -320,8 +327,26 @@ body
 	.filter__menu
 		position: relative
 		max-width: 360px
+		margin-left: 10px
+		z-index: 1004
+
+		@media(max-width: 1026px)
+			margin-left: 70px
+
 		@media(max-width: 1023px)
-			//max-width: 360px
+			margin-left: 5px
+
+		@media(max-width: 426px)
+			margin-left: 18px
+
+		@media(max-width: 424px)
+			max-width: 356px
+
+		@media(max-width: 376px)
+			margin-left: -5px
+
+		@media(max-width: 374px)
+			margin-left: 0
 
 		svg
 			margin-left: 11px
@@ -330,26 +355,53 @@ body
 				width: 37px
 				height: 25px
 				margin-left: 0
+				margin-right: 0
 
 	.filter__menu[open]
 		box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
 
-	.filter__menu[open] .filter__title
+	.filter__menu[open] .filter__title-menu
 		color: $special-color
 		fill: $special-color
 		background: #fff
 		position: relative
 		width: 360px
-		z-index: 1001
+		z-index: 1002
+
+		@media(max-width: 374px)
+			width: 290px
+
+	.filter__menu[open]
+		@media(max-width: 700px)
+			position: absolute
+			z-index: 1005
+
 
 	.filter__title
 		display: block
-		max-width: 106px
+		width: 360px
 		cursor: pointer
 		padding: 13px 16px
 
-		@media(max-width: 730px)
-			padding: 15px 0
+		@media(max-width: 1026px)
+			width: 106px
+
+
+		@media(max-width: 770px)
+			margin-left: 0
+
+		@media(max-width: 700px)
+			padding: 12px 0 12px 15px
+			margin-right: 0
+
+		@media(max-width: 424px)
+			max-width: 356px
+
+		@media(max-width: 374px)
+			max-width: 290px
+			position: relative
+			z-index: 1003
+
 
 		span
 			@media(max-width: 600px)
@@ -357,6 +409,10 @@ body
 
 		&__title::-webkit-details-marker
 			display: none
+
+	.filter__title-size
+		width: 70px
+		padding: 13px 0
 
 	.filter__drop
 		position: absolute
@@ -366,7 +422,10 @@ body
 		background: #fff
 		padding: 0 16px
 		box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
-		z-index: 1000
+		z-index: 1001
+
+		@media(max-width: 374px)
+			width: 290px
 
 		.filter__subtitle
 			font-weight: normal
@@ -406,19 +465,33 @@ body
 		display: flex
 		align-items: center
 		flex-direction: row
-		margin-left: 290px
+		margin-left: 20px
 		color: #6F6E6E
-		margin-right: 28px
+		position: relative
+		z-index: 1004
 
-		@media(max-width: 1023px)
+		@media(max-width: 1026px)
 			font-size: 12px
-			margin: 0
+			margin-right: 75px
+
+		@media(max-width: 850px)
+			margin-right: 10px
+
+
+		@media(max-width: 700px)
+			margin: 0 auto
+
+		@media(max-width: 426px)
+			//margin: 0 auto
+			font-size: 10px
+			align-items: baseline
 
 		i
 			margin-left: 10px
 
-			@media(max-width: 325px)
-				margin-left: 5px
+			@media(max-width: 424px)
+
+				display: none
 
 		.filter__item
 			margin-right: 28px
@@ -427,15 +500,7 @@ body
 				margin-right: 15px
 
 		.filter__item:last-child
-			@media(max-width: 1026px)
 			margin-right: 0
-			margin-left: 24px
-
-			@media(max-width: 325px)
-				margin-left: 15px
-
-
-
 
 		.filter__size
 			position: relative
@@ -443,7 +508,7 @@ body
 		.filter__size-drop
 			position: absolute
 			top: 35px
-			left: 7px
+			left: -10px
 			width: 79px
 			height: 103px
 			padding: 7px 9px 11px
@@ -494,8 +559,6 @@ body
 			background: none
 
 
-
-
 	&__text-block
 		margin: 290px 100px 380px 0
 		@media(max-width: 1023px)
@@ -532,7 +595,6 @@ body
 
 	&__red
 		color: $special-color
-
 
 
 .offer
@@ -691,9 +753,26 @@ body
 .cart
 	padding: 96px 0 128px
 
+	@media(max-width: 980px)
+		padding: 59px 0 90px
+
+	@media(max-width: 374px)
+		padding: 50px 0
+
 	&__general
 		display: flex
 		justify-content: space-between
+
+
+		@media(max-width: 1060px)
+			justify-content: space-around
+
+		@media(max-width: 980px)
+			flex-direction: column
+			margin: 0 auto
+
+		@media(max-width: 374px)
+			width: 100%
 
 	&__item
 		position: relative
@@ -703,10 +782,31 @@ body
 		box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13)
 		margin-bottom: 40px
 
-	&__img
+		@media(max-width: 1060px)
+			width: 570px
 
+		@media(max-width: 980px)
+			width: 734px
+			margin: 0 auto 40px
+
+		@media(max-width: 767px)
+			width: 358px
+			height: 175px
+
+		@media(max-width: 374px)
+			width: 100%
+
+
+	&__img
 		width: 262px
 		margin-right: 31px
+
+		@media(max-width: 767px)
+			width: 143px
+			height: 175px
+
+		@media(max-width: 374px)
+			margin-right: 18px
 
 	&__info
 		padding-left: 0
@@ -721,6 +821,18 @@ body
 		margin-bottom: 42px
 		color: #222222
 
+		@media(max-width: 767px)
+			width: 140px
+			font-size: 16px
+			line-height: 19px
+			margin-top: 13px
+			margin-bottom: 20px
+
+		@media(max-width: 374px)
+			font-size: 12px
+			line-height: 17px
+			width: 100px
+
 	&__features
 		list-style: none
 		padding-left: 0
@@ -732,9 +844,11 @@ body
 			color: #575757
 			margin-bottom: 6px
 
+			@media(max-width: 767px)
+				font-size: 14px
+				line-height: 17px
+
 		span
-			font-size: 22px
-			line-height: 26px
 			color: #EF5B70
 
 		.number
@@ -747,6 +861,11 @@ body
 			margin-left: 24px
 			text-align: center
 
+			@media(max-width: 767px)
+				width: 24px
+				height: 15px
+
+
 	&__cross
 		position: absolute
 		top: 28px
@@ -756,11 +875,31 @@ body
 		text-align: center
 		color: #575757
 
+		@media(max-width: 767px)
+			top: 15px
+			right: 12px
+
 	&__button
 		display: flex
 		justify-content: space-between
 		width: 652px
 		padding-top: 32px
+
+		@media(max-width: 1060px)
+			width: 570px
+
+		@media(max-width: 980px)
+			width: 508px
+			padding-top: 22px
+			margin: 0 auto 64px
+
+		@media(max-width: 767px)
+			width: 359px
+			padding-top: 0
+			margin-bottom: 48px
+
+		@media(max-width: 374px)
+			width: 100%
 
 	&__btn
 		width: 235px
@@ -771,16 +910,47 @@ body
 		font-size: 14px
 		line-height: 17px
 		color: #000000
+		cursor: pointer
+
+		@media(max-width: 767px)
+			width: 175px
+			height: 33px
+			font-size: 12px
+			text-transform: capitalize
+
+		@media(max-width: 374px)
+			width: 140px
 
 		&:hover
 			background: $special-color
 			color: #fff
 			border: transparent
 
+		&:active
+			padding: calc(.25em + 1px) .5em calc(.25em - 1px)
+			border-color: rgba(177, 159, 0, 1)
+			box-shadow: inset 0 -1px 1px rgba(0, 0, 0, .1), inset 0 1px 5px rgba(0, 0, 0, .3), inset 0 0 0 60px $special-color
+
+	&__order
+		@media(max-width: 980px)
+			display: flex
+			justify-content: space-around
+
+		@media(max-width: 780px)
+			justify-content: space-between
+			padding: 0 15px
+
+		@media(max-width: 767px)
+			flex-direction: column
+			margin: 0 auto
+
 	&__form-address
 		display: flex
 		flex-direction: column
 		width: 360px
+
+		@media(max-width: 374px)
+			width: 100%
 
 	.cart__form
 		display: flex
@@ -793,6 +963,9 @@ body
 		color: #222222
 		margin-top: 17px
 
+		@media(max-width: 980px)
+			margin-top: 0
+
 	.cart__input
 		width: 360px
 		height: 45px
@@ -803,6 +976,9 @@ body
 		color: #B1B1B1
 		padding: 0 17px
 		margin-top: 20px
+
+		@media(max-width: 374px)
+			width: 100%
 
 		&:hover
 			box-shadow: 2px 2px 8px 3px rgba(34, 60, 80, 0.06)
@@ -815,17 +991,36 @@ body
 		font-size: 11px
 		color: #4A4A4A
 		margin-bottom: 57px
+		cursor: pointer
 
 		&:hover
 			background: $special-color
 			color: #fff
 			border: transparent
 
+		&:active
+			padding: calc(.25em + 1px) .5em calc(.25em - 1px)
+			border-color: rgba(177, 159, 0, 1)
+			box-shadow: inset 0 -1px 1px rgba(0, 0, 0, .1), inset 0 1px 5px rgba(0, 0, 0, .3), inset 0 0 0 60px $special-color
+
+
+		@media(max-width: 767px)
+			margin-bottom: 48px
+
 	&__form-total
 		width: 360px
 		height: 214px
 		background: #F5F3F3
 		padding: 39px 43px 42px
+
+		@media(max-width: 980px)
+			margin-top: 39px
+
+		@media(max-width: 767px)
+			margin-top: 0
+
+		@media(max-width: 374px)
+			width: 100%
 
 	hr
 		background: #E2E2E2
@@ -868,9 +1063,12 @@ body
 		background: #F16D7F
 		color: #fff
 		text-decoration: none
+		cursor: pointer
 
-		&:hover
-			background: #f18593
+		&:active
+			padding: calc(15px + 1px) 42px calc(15px - 1px)
+			border-color: rgba(177, 159, 0, 1)
+			box-shadow: inset 0 -1px 1px rgba(0, 0, 0, .1), inset 0 1px 5px rgba(0, 0, 0, .3), inset 0 0 0 60px $special-color
 
 .registration
 	.wrapper
@@ -880,10 +1078,11 @@ body
 
 		@media(max-width: 767px)
 			flex-direction: column
+			padding: 40px 0 60px
 
 	&__form
 		@media(max-width: 767px)
-			max-width: 100%
+			max-width: 91%
 			margin: 0 auto
 
 	&__form-text
@@ -903,9 +1102,12 @@ body
 		border: 1px solid #A4A4A4
 		padding: 0 17px
 		margin-top: 20px
+
+		@media(max-width: 767px)
+			margin: 20px auto 0
+
 		@media(max-width: 424px)
 			width: 100%
-
 
 		&:hover
 			box-shadow: 2px 2px 8px 3px rgba(34, 60, 80, 0.06)
@@ -954,9 +1156,15 @@ body
 	&__info
 		margin-left: 128px
 
+		@media(max-width: 1026px)
+			margin-left: 70px
+
 		@media(max-width: 1023px)
 			margin-left: 22px
 
+		@media(max-width: 767px)
+			margin: 0 auto
+			width: 90%
 
 	&__title
 		font-weight: 300
@@ -965,7 +1173,7 @@ body
 		color: #000000
 		margin-bottom: 22px
 
-		@media(max-width: 1023px)
+		@media(max-width: 1026px)
 			font-size: 16px
 
 	&__info-text
@@ -975,7 +1183,7 @@ body
 		color: #000000
 		margin-bottom: 21px
 
-		@media(max-width: 1023px)
+		@media(max-width: 1026px)
 			font-size: 16px
 
 	&__list-item
@@ -985,7 +1193,7 @@ body
 		font-size: 24px
 		line-height: 29px
 		color: #000000
-		@media(max-width: 1023px)
+		@media(max-width: 1026px)
 			font-size: 16px
 
 		i
@@ -1329,6 +1537,10 @@ body
 			background: #d35b6b
 			cursor: pointer
 
+		&:active
+			border-color: rgba(177, 159, 0, 1)
+			box-shadow: inset 0 -1px 1px rgba(0, 0, 0, .1), inset 0 1px 5px rgba(0, 0, 0, .3), inset 0 0 0 60px $special-color
+
 
 .footer
 	background: #222224
@@ -1368,3 +1580,7 @@ body
 
 		@media(max-width: 767px)
 			margin: 43px 0 40px
+
+.error
+	border: 0.15rem solid $special-color !important
+	border-radius: 3px

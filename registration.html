@@ -149,13 +149,6 @@
 	<section class="subheader">
 		<div class="wrapper subheader__general">
 			<h1 class="subheader__title">REGISTRATION </h1>
-			<ul class="breadcrumb">
-				<li class="breadcrumb__item"><a href="index.html" class="breadcrumb__link" target="_blank">Home /</a>
-				</li>
-				<li class="breadcrumb__item"><a href="product.html" class="breadcrumb__link" target="_blank">Men /</a></li>
-				<li class="breadcrumb__item"><a href="catalog.html" class="breadcrumb__link" target="_blank">NEW ARRIVALS</a>
-				</li>
-			</ul>
 		</div>
 	</section>
 
@@ -164,21 +157,27 @@
 			<form class="registration__form">
 				<p class="registration__form-text">Your Name</p>
         <label>
-          <input type="text" class="registration__input" placeholder="First Name" required>
+          <input type="text" class="registration__input form-control"
+                 placeholder="First Name">
         </label>
         <label>
-          <input type="text" class="registration__input" placeholder="Last Name" required>
+          <input type="text" class="registration__input form-control"
+                 placeholder="Last Name">
         </label>
         <div class="registration__gender">
-					<label><input type="radio" name="gender" value="Male"> Male</label>
-					<label><input type="radio" name="gender" value="Female"> Female</label>
+					<label><input class="form-control" type="radio" name="gender" value="Male"> Male
+          </label>
+					<label><input class="form-control" type="radio" name="gender" value="Female"> Female
+          </label>
 				</div>
 				<p class="registration__form-text">Login details</p>
         <label>
-          <input type="email" class="registration__input" placeholder="Email" required>
+          <input type="email" class="registration__input form-control"
+                 placeholder="Email">
         </label>
         <label>
-          <input type="password" class="registration__input" placeholder="Password" minlength="2" maxlength="20" required>
+          <input type="password" class="registration__input form-control"
+                 placeholder="Password" minlength="2" maxlength="20">
         </label>
         <p class="registration__form-text registration__text-correct">Please use 8 or more characters, with at least 1
 					number and a mixture
@@ -192,8 +191,9 @@
 				</p>
 				<ul class="registration__info-list">
 					<li class="registration__list-item"><i class="fas fa-check"></i>15% off welcome offer </li>
-					<li class="registration__list-item"><i class="fas fa-check"></i>Free shipping, returns and exchanges on all
-						orders</li>
+					<li class="registration__list-item"><i
+            class="fas fa-check"></i>Free shipping, returns and exchanges on
+            all orders</li>
 					<li class="registration__list-item"><i class="fas fa-check"></i>$10 off a purchase on your birthday</li>
 					<li class="registration__list-item"><i class="fas fa-check"></i>Early access to products</li>
 					<li class="registration__list-item"><i class="fas fa-check"></i>Exclusive offers & rewards</li>
@@ -288,6 +288,7 @@
 		</div>
 	</footer>
   <script src="js/drop_menu.js"></script>
+  <script src="js/validation.js"></script>
 </body>
 
 </html>
