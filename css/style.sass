@@ -797,7 +797,6 @@ body
 			width: 100%
 
 
-
 	&__img
 		width: 262px
 		margin-right: 31px
@@ -911,6 +910,7 @@ body
 		font-size: 14px
 		line-height: 17px
 		color: #000000
+		cursor: pointer
 
 		@media(max-width: 767px)
 			width: 175px
@@ -925,6 +925,11 @@ body
 			background: $special-color
 			color: #fff
 			border: transparent
+
+		&:active
+			padding: calc(.25em + 1px) .5em calc(.25em - 1px)
+			border-color: rgba(177, 159, 0, 1)
+			box-shadow: inset 0 -1px 1px rgba(0, 0, 0, .1), inset 0 1px 5px rgba(0, 0, 0, .3), inset 0 0 0 60px $special-color
 
 	&__order
 		@media(max-width: 980px)
@@ -986,14 +991,21 @@ body
 		font-size: 11px
 		color: #4A4A4A
 		margin-bottom: 57px
-
-		@media(max-width: 767px)
-			margin-bottom: 48px
+		cursor: pointer
 
 		&:hover
 			background: $special-color
 			color: #fff
 			border: transparent
+
+		&:active
+			padding: calc(.25em + 1px) .5em calc(.25em - 1px)
+			border-color: rgba(177, 159, 0, 1)
+			box-shadow: inset 0 -1px 1px rgba(0, 0, 0, .1), inset 0 1px 5px rgba(0, 0, 0, .3), inset 0 0 0 60px $special-color
+
+
+		@media(max-width: 767px)
+			margin-bottom: 48px
 
 	&__form-total
 		width: 360px
@@ -1051,9 +1063,12 @@ body
 		background: #F16D7F
 		color: #fff
 		text-decoration: none
+		cursor: pointer
 
-		&:hover
-			background: #f18593
+		&:active
+			padding: calc(15px + 1px) 42px calc(15px - 1px)
+			border-color: rgba(177, 159, 0, 1)
+			box-shadow: inset 0 -1px 1px rgba(0, 0, 0, .1), inset 0 1px 5px rgba(0, 0, 0, .3), inset 0 0 0 60px $special-color
 
 .registration
 	.wrapper
@@ -1093,7 +1108,6 @@ body
 
 		@media(max-width: 424px)
 			width: 100%
-
 
 		&:hover
 			box-shadow: 2px 2px 8px 3px rgba(34, 60, 80, 0.06)
@@ -1151,9 +1165,6 @@ body
 		@media(max-width: 767px)
 			margin: 0 auto
 			width: 90%
-
-
-
 
 	&__title
 		font-weight: 300
@@ -1526,6 +1537,10 @@ body
 			background: #d35b6b
 			cursor: pointer
 
+		&:active
+			border-color: rgba(177, 159, 0, 1)
+			box-shadow: inset 0 -1px 1px rgba(0, 0, 0, .1), inset 0 1px 5px rgba(0, 0, 0, .3), inset 0 0 0 60px $special-color
+
 
 .footer
 	background: #222224
@@ -1565,3 +1580,7 @@ body
 
 		@media(max-width: 767px)
 			margin: 43px 0 40px
+
+.error
+	border: 0.15rem solid $special-color !important
+	border-radius: 3px
