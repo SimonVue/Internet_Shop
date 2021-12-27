@@ -1193,11 +1193,12 @@ body {
 @media (max-width: 767px) {
   .registration .wrapper {
     flex-direction: column;
+    padding: 40px 0 60px;
   }
 }
 @media (max-width: 767px) {
   .registration__form {
-    max-width: 100%;
+    max-width: 91%;
     margin: 0 auto;
   }
 }
@@ -1218,6 +1219,11 @@ body {
   border: 1px solid #A4A4A4;
   padding: 0 17px;
   margin-top: 20px;
+}
+@media (max-width: 767px) {
+  .registration__input {
+    margin: 20px auto 0;
+  }
 }
 @media (max-width: 424px) {
   .registration__input {
@@ -1276,9 +1282,20 @@ body {
 .registration__info {
   margin-left: 128px;
 }
+@media (max-width: 1026px) {
+  .registration__info {
+    margin-left: 70px;
+  }
+}
 @media (max-width: 1023px) {
   .registration__info {
     margin-left: 22px;
+  }
+}
+@media (max-width: 767px) {
+  .registration__info {
+    margin: 0 auto;
+    width: 90%;
   }
 }
 .registration__title {
@@ -1288,7 +1305,7 @@ body {
   color: #000000;
   margin-bottom: 22px;
 }
-@media (max-width: 1023px) {
+@media (max-width: 1026px) {
   .registration__title {
     font-size: 16px;
   }
@@ -1300,7 +1317,7 @@ body {
   color: #000000;
   margin-bottom: 21px;
 }
-@media (max-width: 1023px) {
+@media (max-width: 1026px) {
   .registration__info-text {
     font-size: 16px;
   }
@@ -1313,7 +1330,7 @@ body {
   line-height: 29px;
   color: #000000;
 }
-@media (max-width: 1023px) {
+@media (max-width: 1026px) {
   .registration__list-item {
     font-size: 16px;
   }
