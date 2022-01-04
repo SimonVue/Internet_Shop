@@ -1087,6 +1087,11 @@ body {
   color: #222222;
   margin-top: 17px;
 }
+@media (max-width: 980px) {
+  .cart .cart__form-title {
+    margin-top: 0;
+  }
+}
 @media (max-width: 767px) {
   .cart .cart__form-title {
     text-align: left;
