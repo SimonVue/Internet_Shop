@@ -1056,6 +1056,7 @@ body {
 }
 @media (max-width: 767px) {
   .cart__order {
+    text-align: center;
     flex-direction: column;
     margin: 0 auto;
   }
@@ -1064,6 +1065,11 @@ body {
   display: flex;
   flex-direction: column;
   width: 360px;
+}
+@media (max-width: 767px) {
+  .cart__form-address {
+    width: 100%;
+  }
 }
 @media (max-width: 374px) {
   .cart__form-address {
@@ -1081,9 +1087,9 @@ body {
   color: #222222;
   margin-top: 17px;
 }
-@media (max-width: 980px) {
+@media (max-width: 767px) {
   .cart .cart__form-title {
-    margin-top: 0;
+    text-align: left;
   }
 }
 .cart .cart__input {
@@ -1097,7 +1103,7 @@ body {
   padding: 0 17px;
   margin-top: 20px;
 }
-@media (max-width: 374px) {
+@media (max-width: 424px) {
   .cart .cart__input {
     width: 100%;
   }
@@ -1131,7 +1137,7 @@ body {
   }
 }
 .cart__form-total {
-  width: 360px;
+  max-width: 360px;
   height: 214px;
   background: #F5F3F3;
   padding: 39px 43px 42px;
@@ -1194,6 +1200,12 @@ body {
   text-decoration: none;
   cursor: pointer;
 }
+@media (max-width: 767px) {
+  .cart .cart__checkout-btn {
+    padding: 15px 20px;
+    font-size: 12px;
+  }
+}
 .cart .cart__checkout-btn:active {
   padding: 16px 42px 14px;
   border-color: #b19f00;
@@ -1213,15 +1225,25 @@ body {
 }
 @media (max-width: 767px) {
   .registration__form {
-    max-width: 91%;
+    max-width: 100%;
     margin: 0 auto;
   }
+}
+.registration__form label {
+  margin: 0 auto;
+  width: 100%;
 }
 .registration__form-text {
   font-weight: 300;
   font-size: 16px;
   line-height: 19px;
   color: #222222;
+}
+@media (max-width: 767px) {
+  .registration__form-text {
+    max-width: 358px;
+    margin: 0 auto;
+  }
 }
 .registration__input {
   display: block;
