@@ -4,6 +4,7 @@
 @import slider
 @import filter
 @import promo
+@import offer
 
 *
 	margin: 0
@@ -28,81 +29,6 @@ body
 
 	@media(max-width: 767px)
 		max-width: 95%
-
-.offer
-	.wrapper
-		display: flex
-		justify-content: space-between
-		flex-wrap: wrap
-
-		@media(max-width: 767px)
-			justify-content: center
-
-	&__card
-		display: flex
-		align-items: center
-		width: 360px
-		height: 260px
-		margin-bottom: 30px
-		transition: 0.3s
-
-		&:hover
-			transform: scale(1.05)
-			box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
-
-		@media(max-width: 1120px)
-			width: 315px
-			height: 215px
-
-		@media(max-width: 980px)
-			width: 232px
-			height: 167px
-
-		@media(max-width: 767px)
-			width: 343px
-			height: 247px
-
-		.offer__item
-			text-align: center
-			margin: 0 auto
-			transition-duration: 1s
-			transition: 0.3s
-
-			&:hover
-				transform: scale(1.05)
-
-			.offer__suptitle
-				font-weight: 400
-				font-size: 16px
-				color: #FFF
-				text-transform: uppercase
-				margin-bottom: 10px
-
-			.offer__title
-				font-weight: 700
-				font-size: 24px
-				color: $special-color
-				text-transform: uppercase
-
-				.offer__link
-					text-decoration: none
-					color: $special-color
-					cursor: pointer
-
-	.offer__women
-		background: url('../img/img_offer_1.png') center
-
-	.offer__men
-		background: url('../img/img_offer_2.jpg') center
-
-	.offer__kids
-		background: url('../img/img_offer_3.jpg') center
-
-	.offer__lux
-		width: 100%
-		height: 180px
-		margin-bottom: 96px
-		background: url('../img/img_offer_4.jpg') center
 
 .review
 	.wrapper
