@@ -1,0 +1,44 @@
+.subheader
+  background: #F8F3F4
+
+  .wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 148px
+
+    @media(max-width: 767px)
+      height: 100px
+
+  &__title
+    font-size: 24px
+    line-height: 29px
+    font-weight: 400
+    color: $special-color
+
+    @media(max-width: 767px)
+      margin: 0 auto
+
+  .breadcrumb
+    display: flex
+    @media(max-width: 767px)
+      display: none
+
+    &:active
+      font-weight: 700
+      color: $special-color
+
+    &__item
+      list-style: none
+      margin-left: 5px
+
+    &__link
+      font-weight: 300
+      font-size: 14px
+      color: #636363
+      text-decoration: none
+      text-transform: uppercase
+      cursor: pointer
+
+      &:hover
+        color: #F16D7F

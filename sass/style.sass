@@ -1,8 +1,10 @@
 @import mixin
 @import header
+@import subheader
+@import slider
 
 *
-	margin:
+	margin: 0
 	padding: 0
 	box-sizing: border-box
 
@@ -24,73 +26,6 @@ body
 
 	@media(max-width: 767px)
 		max-width: 95%
-
-.subheader
-	background: #F8F3F4
-
-	.wrapper
-		display: flex
-		justify-content: space-between
-		align-items: center
-		height: 148px
-
-		@media(max-width: 767px)
-			height: 100px
-
-	&__title
-		font-size: 24px
-		line-height: 29px
-		font-weight: 400
-		color: $special-color
-
-		@media(max-width: 767px)
-			margin: 0 auto
-
-	.breadcrumb
-		display: flex
-		@media(max-width: 767px)
-			display: none
-
-		&:active
-			font-weight: 700
-			color: $special-color
-
-		&__item
-			list-style: none
-			margin-left: 5px
-
-		&__link
-			font-weight: 300
-			font-size: 14px
-			color: #636363
-			text-decoration: none
-			text-transform: uppercase
-			cursor: pointer
-
-			&:hover
-				color: #F16D7F
-
-.slider
-	display: flex
-	justify-content: space-between
-	align-items: center
-	padding: 11px 0 66px 0
-	background: #F7F7F7
-
-	&__img
-		Width: 597px
-		Height: 700px
-
-	&__btn
-		width: 47px
-		height: 47px
-		background: rgba(42, 42, 42, 0.15)
-		border: none
-		font-size: 20px
-		cursor: pointer
-
-		&:hover
-			color: #F16D7F
 
 .filter__wrap
 	display: flex
@@ -299,6 +234,7 @@ body
 
 		.filter__size-item
 			display: flex
+			height: 17px
 			align-items: center
 			margin-bottom: 6px
 
