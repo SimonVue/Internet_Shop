@@ -1,0 +1,67 @@
+.promo
+  position: relative
+  background: #F1E4E6
+  margin-bottom: 65px
+
+  @media(max-width: 1023px)
+    margin-bottom: 20px
+
+  .promo__wrap
+    background: url('../img/promo_man.png') no-repeat -195px 0
+    background-size: contain
+    height: 764px
+    display: flex
+    justify-content: flex-end
+    align-items: center
+
+    @media(max-width: 1120px)
+      height: 650px
+      background: url('../img/promo_man.png') no-repeat -195px 0
+
+    @media(max-width: 1023px)
+      max-width: 768px
+      height: 367px
+      background: url('../img/promo_man.png') no-repeat -20px 0
+      background-size: contain
+
+    @media(max-width: 767px)
+      justify-content: center
+      max-width: 90%
+      margin: 0 auto
+      background: none
+
+  &__text-block
+    margin: 290px 100px 380px 0
+    @media(max-width: 1023px)
+      align-items: center
+      margin: 0
+
+  &__text
+    font-family: Lato, sans-serif
+    font-style: normal
+    line-height: 58px
+    color: #222
+    font-size: 32px
+    text-transform: uppercase
+    padding: 0 0 0 16px
+    border-left: 12px solid $special-color
+
+    @media(max-width: 1023px)
+      font-size: 24px
+      line-height: 29px
+
+    @media(max-width: 767px)
+      font-size: 20px
+
+  &__brand
+    font-size: 48px
+    font-weight: 900
+    line-height: 53px
+
+    @media(max-width: 1023px)
+      font-size: 44px
+    @media(max-width: 767px)
+      font-size: 38px
+
+  &__red
+    color: $special-color
