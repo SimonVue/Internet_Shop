@@ -1,0 +1,135 @@
+.products
+  &__title
+    font-weight: 400
+    font-size: 30px
+    color: #000
+    text-align: center
+    margin: 0 0 6px 0
+    text-transform: uppercase
+
+  &__subtitle
+    font-weight: 400
+    font-size: 14px
+    color: #9F9F9F
+    margin: 0 0 48px 0
+    text-align: center
+
+  &__card
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-around
+    margin-bottom: 48px
+
+    @media(max-width: 374px)
+      flex-direction: column
+
+  .card
+    position: relative
+    width: 360px
+    height: 581px
+    background: #F8F8F8
+    margin-bottom: 30px
+    transition: 0.3s
+
+    &:hover
+      transform: scale(1.05)
+
+      @media(max-width: 374px)
+        transform: none
+
+    &:hover .card__overlay
+      opacity: 1
+
+    &:hover
+      @media(max-width: 376px)
+        transform: none
+
+    @media(max-width: 374px)
+      max-width: 290px
+      max-height: 540px
+      margin: 0 auto 15px
+
+    video
+      @media(max-width: 374px)
+        max-width: 290px
+        max-height: 340px
+
+    &__img
+      width: 356px
+      display: block
+      margin: 0 auto 24px
+
+      @media(max-width: 374px)
+        max-width: 290px
+
+    &__title
+      font-weight: 400
+      font-size: 14px
+      color: #000
+      margin: 0 29px 13px 17px
+      text-transform: uppercase
+
+    &__overlay
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      height: 415px
+      display: flex
+      justify-content: center
+      align-items: center
+      background: rgba(33, 22, 22, 0.7)
+      opacity: 0
+      transition: 0.3s
+
+      @media(max-width: 374px)
+        height: 340px
+
+    &__text
+      font-weight: 300
+      font-size: 14px
+      color: #5D5D5D
+      margin: 0 29px 18px 17px
+
+    &__price
+      font-size: 16px
+      color: $special-color
+      margin: 0 29px 20px 17px
+
+    &__video
+      margin-bottom: 25px
+
+    &__btn
+      width: 139px
+      height: 44px
+      font-size: 14px
+      color: #fff
+      border: 1px solid #fff
+      background: none
+      fill: #fff
+      margin: 0
+
+      svg
+        margin-right: 11px
+
+      &:hover
+        border: transparent
+        color: #fff
+        background: $special-color
+
+  &__button
+    width: 212px
+    height: 48px
+    display: flex
+    justify-content: center
+    align-items: center
+    font-weight: 400
+    font-size: 16px
+    color: $special-color
+    border: 1px solid $special-color
+    text-decoration: none
+    margin: 0 auto 95px
+
+    &:hover
+      background: #F26376
+      color: #fff
