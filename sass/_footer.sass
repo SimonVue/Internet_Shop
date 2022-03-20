@@ -1,18 +1,18 @@
 .footer
-  background: #222224
+  background: $blackBg
 
   &__wrapper
     display: flex
     justify-content: space-between
-    padding: 24px 0
+    padding: rem(24) 0
     align-items: center
 
-    @media(max-width: 767px)
+    @media(max-width: rem(767))
       flex-direction: column-reverse
 
   &__text
-    font-size: 16px
-    color: #FBFBFB
+    font-size: rem(16)
+    color: $colorWhite
     margin-bottom: 0
 
   &__icon
@@ -23,15 +23,15 @@
     margin-bottom: 0
 
     .social__img
-      width: 32px
-      height: 32px
+      width: rem(32)
+      height: rem(32)
       padding: 7px 7px
-      background: #FBFBFB
-      margin-left: 8px
+      background: $colorWhite
+      margin-left: rem(8)
 
       &:hover
         background: $special-color
-        fill: #fff
+        fill: $colorWhite
 
     @media(max-width: 767px)
-      margin: 43px 0 40px
+      margin: rem(43) 0
