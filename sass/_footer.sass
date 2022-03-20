@@ -1,0 +1,37 @@
+.footer
+  background: #222224
+
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    padding: 24px 0
+    align-items: center
+
+    @media(max-width: 767px)
+      flex-direction: column-reverse
+
+  &__text
+    font-size: 16px
+    color: #FBFBFB
+    margin-bottom: 0
+
+  &__icon
+    list-style: none
+
+  &__social
+    display: flex
+    margin-bottom: 0
+
+    .social__img
+      width: 32px
+      height: 32px
+      padding: 7px 7px
+      background: #FBFBFB
+      margin-left: 8px
+
+      &:hover
+        background: $special-color
+        fill: #fff
+
+    @media(max-width: 767px)
+      margin: 43px 0 40px
