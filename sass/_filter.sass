@@ -97,31 +97,31 @@
       display: none
 
   .filter__title-size
-    width: 70px
-    padding: 13px 0
+    width: rem(70)
+    padding: rem(13) 0
 
   .filter__drop
     position: absolute
-    top: 40px
+    top: rem(40)
     left: 0
     width: 100%
     background: #fff
-    padding: 0 16px
+    padding: 0 rem(16)
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
     z-index: 1001
 
-    @media(max-width: 374px)
-      width: 290px
+    @media(max-width: rem(374))
+      width: rem(290)
 
     .filter__subtitle
       font-weight: normal
-      font-size: 14px
-      line-height: 17px
+      font-size: rem(14)
+      line-height: rem(17)
       color: #EF5B70
       border-left: 5px solid #EF5B70
-      border-bottom: 1px solid #EBEBEB
-      padding: 11px
-      margin-bottom: 24px
+      border-bottom: 1px solid $colorWhite
+      padding: rem(11)
+      margin-bottom: rem(24)
       display: block
       cursor: pointer
 
@@ -130,16 +130,16 @@
 
     .filter__submenu-list
       list-style: none
-      margin-left: 33px
-      margin-bottom: 24px
+      margin-left: rem(33)
+      margin-bottom: rem(24)
 
       .filter__submenu-item
-        margin-bottom: 11px
+        margin-bottom: rem(11)
 
       .filter__submenu-btn
         font-weight: normal
-        font-size: 14px
-        line-height: 17px
+        font-size: rem(14)
+        line-height: rem(17)
         color: #6F6E6E
         text-decoration: none
         text-transform: capitalize
@@ -151,29 +151,29 @@
     display: flex
     align-items: center
     flex-direction: row
-    margin-left: 20px
+    margin-left: rem(20)
     color: #6F6E6E
     position: relative
     z-index: 1004
 
-    @media(max-width: 1026px)
-      font-size: 12px
-      margin-right: 75px
+    @media(max-width: rem(1026))
+      font-size: rem(12)
+      margin-right: rem(75)
 
-    @media(max-width: 850px)
-      margin-right: 10px
+    @media(max-width: rem(850))
+      margin-right: rem(10)
 
-    @media(max-width: 700px)
+    @media(max-width: rem(700))
       margin: 0 auto
 
-    @media(max-width: 426px)
-      font-size: 10px
+    @media(max-width: rem(426))
+      font-size: rem(10)
       align-items: baseline
 
     i
-      margin-left: 10px
+      margin-left: rem(10)
 
-      @media(max-width: 424px)
+      @media(max-width: rem(424))
 
         display: none
 
