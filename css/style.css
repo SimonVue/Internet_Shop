@@ -247,10 +247,10 @@
   display: grid;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-  margin-bottom: 10px;
+  gap: 0.625rem;
+  margin-bottom: 0.625rem;
   border-bottom: 1px solid #cdcdcd;
-  padding-bottom: 10px;
+  padding-bottom: 0.625rem;
   text-align: center;
 }
 
