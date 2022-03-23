@@ -2259,7 +2259,7 @@
 .footer__social .social__img {
   width: 2rem;
   height: 2rem;
-  padding: 7px 7px;
+  padding: 0.4375rem;
   background: #FBFBFB;
   margin-left: 0.5rem;
 }
@@ -2269,7 +2269,7 @@
   fill: #FBFBFB;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 47.9375rem) {
   .footer__social {
     margin: 2.6875rem 0;
   }
