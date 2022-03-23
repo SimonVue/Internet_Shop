@@ -230,15 +230,15 @@
   color: #fff;
 }
 
-@media (min-width: 340px) {
+@media (min-width: 21.25rem) {
   .header .basket {
-    font-size: 14px;
+    font-size: 0.875rem;
   }
 }
 
-@media (min-width: 552px) {
+@media (min-width: 34.5rem) {
   .header .basket {
-    width: 500px;
+    width: 31.25rem;
   }
 }
 
