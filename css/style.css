@@ -1333,7 +1333,7 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 415px;
+  height: 25.9375rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1350,27 +1350,27 @@
   transition: 0.3s;
 }
 
-@media (max-width: 374px) {
+@media (max-width: 23.375rem) {
   .products .card__overlay {
-    height: 340px;
+    height: 21.25rem;
   }
 }
 
 .products .card__text {
   font-weight: 300;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #5D5D5D;
-  margin: 0 29px 18px 17px;
+  margin: 0 1.8125rem 1.125rem 1.0625rem;
 }
 
 .products .card__price {
-  font-size: 16px;
+  font-size: 1rem;
   color: #F16D7F;
-  margin: 0 29px 20px 17px;
+  margin: 0 1.8125rem 1.25rem 1.0625rem;
 }
 
 .products .card__video {
-  margin-bottom: 25px;
+  margin-bottom: 1.5625rem;
 }
 
 .products .card__btn {

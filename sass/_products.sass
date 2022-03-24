@@ -73,7 +73,7 @@
       top: 0
       left: 0
       right: 0
-      height: 415px
+      height: rem(415)
       display: flex
       justify-content: center
       align-items: center
@@ -81,22 +81,22 @@
       opacity: 0
       transition: 0.3s
 
-      @media(max-width: 374px)
-        height: 340px
+      @media(max-width: rem(374))
+        height: rem(340)
 
     &__text
       font-weight: 300
-      font-size: 14px
+      font-size: rem(14)
       color: #5D5D5D
-      margin: 0 29px 18px 17px
+      margin: 0 rem(29) rem(18) rem(17)
 
     &__price
-      font-size: 16px
+      font-size: rem(16)
       color: $special-color
-      margin: 0 29px 20px 17px
+      margin: 0 rem(29) rem(20) rem(17)
 
     &__video
-      margin-bottom: 25px
+      margin-bottom: rem(25)
 
     &__btn
       width: 139px
