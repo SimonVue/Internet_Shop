@@ -1374,9 +1374,9 @@
 }
 
 .products .card__btn {
-  width: 139px;
-  height: 44px;
-  font-size: 14px;
+  width: 8.6875rem;
+  height: 2.75rem;
+  font-size: 0.875rem;
   color: #fff;
   border: 1px solid #fff;
   background: none;
@@ -1385,7 +1385,7 @@
 }
 
 .products .card__btn svg {
-  margin-right: 11px;
+  margin-right: 0.6875rem;
 }
 
 .products .card__btn:hover {
@@ -1395,8 +1395,8 @@
 }
 
 .products__button {
-  width: 212px;
-  height: 48px;
+  width: 13.25rem;
+  height: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1407,11 +1407,11 @@
       -ms-flex-align: center;
           align-items: center;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   color: #F16D7F;
   border: 1px solid #F16D7F;
   text-decoration: none;
-  margin: 0 auto 95px;
+  margin: 0 auto 5.9375rem;
 }
 
 .products__button:hover {
