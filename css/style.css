@@ -1221,8 +1221,8 @@
 
 .products__title {
   font-weight: 400;
-  font-size: 30px;
-  color: #000;
+  font-size: 1.875rem;
+  color: #222224;
   text-align: center;
   margin: 0 0 6px 0;
   text-transform: uppercase;
@@ -1991,12 +1991,12 @@
 }
 
 .pagination {
-  width: 284px;
-  height: 44px;
+  width: 17.75rem;
+  height: 2.75rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 auto 95px;
+  margin: 0 auto 5.9375rem;
 }
 
 .pagination .pagination__block {
@@ -2007,13 +2007,13 @@
       -ms-flex-pack: center;
           justify-content: center;
   border: 1px solid #EBEBEB;
-  border-radius: 5px;
-  padding: 12px 16px;
+  border-radius: 0.3125rem;
+  padding: 0.75rem 1rem;
 }
 
 .pagination ul {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   text-decoration: none;
 }
 
@@ -2026,7 +2026,7 @@
 }
 
 .pagination i {
-  color: #000;
+  color: #222224;
 }
 
 .pagination i:last-child {
@@ -2038,10 +2038,10 @@
 }
 
 .pagination .page-link {
-  margin: 0 12px;
+  margin: 0 0.75rem;
   font-weight: 300;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 1rem;
+  line-height: 1.1875rem;
   color: #C4C4C4;
   text-decoration: none;
 }
