@@ -28,23 +28,23 @@
     width: rem(360)
     height: rem(581)
     background: #F8F8F8
-    margin-bottom: 30px
+    margin-bottom: rem(30)
     transition: 0.3s
 
     &:hover
       transform: scale(1.05)
 
-      @media(max-width: 374px)
+      @media(max-width: rem(374))
         transform: none
 
     &:hover .card__overlay
       opacity: 1
 
     &:hover
-      @media(max-width: 376px)
+      @media(max-width: rem(376))
         transform: none
 
-    @media(max-width: 374px)
+    @media(max-width: rem(376))
       max-width: 290px
       max-height: 540px
       margin: 0 auto 15px

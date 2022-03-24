@@ -1261,7 +1261,7 @@
   width: 22.5rem;
   height: 36.3125rem;
   background: #F8F8F8;
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -1273,7 +1273,7 @@
           transform: scale(1.05);
 }
 
-@media (max-width: 374px) {
+@media (max-width: 23.375rem) {
   .products .card:hover {
     -webkit-transform: none;
         -ms-transform: none;
@@ -1285,7 +1285,7 @@
   opacity: 1;
 }
 
-@media (max-width: 376px) {
+@media (max-width: 23.5rem) {
   .products .card:hover {
     -webkit-transform: none;
         -ms-transform: none;
@@ -1293,7 +1293,7 @@
   }
 }
 
-@media (max-width: 374px) {
+@media (max-width: 23.5rem) {
   .products .card {
     max-width: 290px;
     max-height: 540px;
