@@ -1309,22 +1309,22 @@
 }
 
 .products .card__img {
-  width: 356px;
+  width: 22.25rem;
   display: block;
-  margin: 0 auto 24px;
+  margin: 0 auto 1.5rem;
 }
 
-@media (max-width: 374px) {
+@media (max-width: 23.375rem) {
   .products .card__img {
-    max-width: 290px;
+    max-width: 18.125rem;
   }
 }
 
 .products .card__title {
   font-weight: 400;
-  font-size: 14px;
-  color: #000;
-  margin: 0 29px 13px 17px;
+  font-size: 0.875rem;
+  color: #222224;
+  margin: 0 1.8125rem 0.8125rem 1.0625rem;
   text-transform: uppercase;
 }
 
