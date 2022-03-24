@@ -1301,10 +1301,10 @@
   }
 }
 
-@media (max-width: 374px) {
+@media (max-width: 23.375rem) {
   .products .card video {
-    max-width: 290px;
-    max-height: 340px;
+    max-width: 18.125rem;
+    max-height: 21.25rem;
   }
 }
 
