@@ -1377,10 +1377,10 @@
   width: 8.6875rem;
   height: 2.75rem;
   font-size: 0.875rem;
-  color: #fff;
-  border: 1px solid #fff;
+  color: #ffffff;
+  border: 1px solid #ffffff;
   background: none;
-  fill: #fff;
+  fill: #ffffff;
   margin: 0;
 }
 
@@ -1390,7 +1390,7 @@
 
 .products .card__btn:hover {
   border: transparent;
-  color: #fff;
+  color: #ffffff;
   background: #F16D7F;
 }
 
@@ -1416,7 +1416,7 @@
 
 .products__button:hover {
   background: #F26376;
-  color: #fff;
+  color: #ffffff;
 }
 
 .features {
