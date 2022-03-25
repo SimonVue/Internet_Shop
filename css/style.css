@@ -786,20 +786,20 @@
 }
 
 .promo__brand {
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 900;
-  line-height: 53px;
+  line-height: 3.3125rem;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 63.9375rem) {
   .promo__brand {
-    font-size: 44px;
+    font-size: 2.75rem;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 47.9375rem) {
   .promo__brand {
-    font-size: 38px;
+    font-size: 2.375rem;
   }
 }
 
