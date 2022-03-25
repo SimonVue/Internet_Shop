@@ -697,19 +697,19 @@
 .promo {
   position: relative;
   background: #F1E4E6;
-  margin-bottom: 65px;
+  margin-bottom: 4.0625rem;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 63.9375rem) {
   .promo {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
   }
 }
 
 .promo .promo__wrap {
   background: url("../img/promo_man.png") no-repeat -195px 0;
   background-size: contain;
-  height: 764px;
+  height: 47.75rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -721,17 +721,17 @@
           align-items: center;
 }
 
-@media (max-width: 1120px) {
+@media (max-width: 70rem) {
   .promo .promo__wrap {
-    height: 650px;
+    height: 40.625rem;
     background: url("../img/promo_man.png") no-repeat -195px 0;
   }
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 63.9375rem) {
   .promo .promo__wrap {
-    max-width: 768px;
-    height: 367px;
+    max-width: 48rem;
+    height: 22.9375rem;
     background: url("../img/promo_man.png") no-repeat -20px 0;
     background-size: contain;
   }
@@ -749,10 +749,10 @@
 }
 
 .promo__text-block {
-  margin: 290px 100px 380px 0;
+  margin: 18.125rem 6.25rem 23.75rem 0;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 63.9375rem) {
   .promo__text-block {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -764,24 +764,24 @@
 .promo__text {
   font-family: Lato, sans-serif;
   font-style: normal;
-  line-height: 58px;
-  color: #222;
-  font-size: 32px;
+  line-height: 3.625rem;
+  color: #222224;
+  font-size: 2rem;
   text-transform: uppercase;
-  padding: 0 0 0 16px;
-  border-left: 12px solid #F16D7F;
+  padding: 0 0 0 1rem;
+  border-left: 0.75rem solid #F16D7F;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 63.9375rem) {
   .promo__text {
-    font-size: 24px;
-    line-height: 29px;
+    font-size: 1.5rem;
+    line-height: 1.8125rem;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 47.9375rem) {
   .promo__text {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 }
 

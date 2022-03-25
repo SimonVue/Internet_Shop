@@ -1,26 +1,26 @@
 .promo
   position: relative
   background: #F1E4E6
-  margin-bottom: 65px
+  margin-bottom: rem(65)
 
-  @media(max-width: 1023px)
-    margin-bottom: 20px
+  @media(max-width: rem(1023))
+    margin-bottom: rem(20)
 
   .promo__wrap
     background: url('../img/promo_man.png') no-repeat -195px 0
     background-size: contain
-    height: 764px
+    height: rem(764)
     display: flex
     justify-content: flex-end
     align-items: center
 
-    @media(max-width: 1120px)
-      height: 650px
+    @media(max-width: rem(1120))
+      height: rem(650)
       background: url('../img/promo_man.png') no-repeat -195px 0
 
-    @media(max-width: 1023px)
-      max-width: 768px
-      height: 367px
+    @media(max-width: rem(1023))
+      max-width: rem(768)
+      height: rem(367)
       background: url('../img/promo_man.png') no-repeat -20px 0
       background-size: contain
 
@@ -31,27 +31,27 @@
       background: none
 
   &__text-block
-    margin: 290px 100px 380px 0
-    @media(max-width: 1023px)
+    margin: rem(290) rem(100) rem(380) 0
+    @media(max-width: rem(1023))
       align-items: center
       margin: 0
 
   &__text
     font-family: Lato, sans-serif
     font-style: normal
-    line-height: 58px
-    color: #222
-    font-size: 32px
+    line-height: rem(58)
+    color: $blackBg
+    font-size: rem(32)
     text-transform: uppercase
-    padding: 0 0 0 16px
-    border-left: 12px solid $special-color
+    padding: 0 0 0 rem(16)
+    border-left: rem(12) solid $special-color
 
-    @media(max-width: 1023px)
-      font-size: 24px
-      line-height: 29px
+    @media(max-width: rem(1023))
+      font-size: rem(24)
+      line-height: rem(29)
 
-    @media(max-width: 767px)
-      font-size: 20px
+    @media(max-width: rem(767))
+      font-size: rem(20)
 
   &__brand
     font-size: 48px
